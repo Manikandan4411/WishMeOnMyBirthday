@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration</title>
+</head>
+<body>
+<form action="" method="POST">{% csrf_token %}
+  <h1>Username: </h1>
+  <input type="text" name="username">
+  <h1>Firstname: </h1>
+  <input type="text" name="firstname">
+  <h1>Lastname: </h1>
+  <input type="text" name="lastname">
+  <h1>Email ID: </h1>
+  <input type="email" name="email">
+  <h1>Password: </h1>
+  <input type="password" name="password">
+  <h1>Confirm Password: </h1>
+  <input type="password" name="confirm_password">
+  <h1>Date of Birth: </h1>
+  <input type="date" name="birth_date">
+  <input type="submit" value="Register">
+  {% if messages %}
+  <ul class="messages">
+    {% for message in messages %}
+    <li>{{message}}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</form>
+<a href="/login/"><button><span>Login </span></button></a>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+<form action="" method="POST">{% csrf_token %}
+  <h1>Username: </h1>
+  <input type="text" name="username">
+  <h1>Password: </h1>
+  <input type="password" name="password">
+  <input type="submit" value="Login">
+  {% if messages %}
+  <ul class="messages">
+    {% for message in messages %}
+    <li>{{message}}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</form>
+<a href="/signup/"><button><span>Register </span></button></a>
+<a href="/recoverusername/"><button><span>Forgot Username </span></button></a>
+<a href="/recoverpassword/"><button><span>Forgot Password </span></button></a>
+</body>
+</html>

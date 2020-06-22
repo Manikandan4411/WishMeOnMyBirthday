@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Profile</title>
+</head>
+<body>
+<h1>Username: </h1>
+<label>{{ user.username }}</label>
+<h1>Firstname: </h1>
+<label>{{ user.firstname }}</label>
+<h1>Lastname: </h1>
+<label>{{ user.lastname }}</label>
+<h1>Email ID: </h1>
+<label>{{ user.email }}</label>
+<h1>Password: </h1>
+<label>{{ user.Password }}</label>
+<h1>Date of Birth: </h1>
+<label>{{ user.birth_date }}</label>
+<h1>Age: </h1>
+<label>{{ user.age }}</label>
+<!--<a href="/updateprofile/{{user.username}}"><button>Update Profile</button></a>-->
+<a href="/welcome/{{user.username}}"><button>Home</button></a>
+</body>
+</html>

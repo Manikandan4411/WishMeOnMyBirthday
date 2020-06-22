@@ -1,0 +1,11 @@
+Index Page - Login and SignUp
+Login Page - Login details, Signup Button and Forgot your Password, Forgot your Username
+SignUp Page - Signup details, Login Button
+Welcome Page - Birthday details, My_Profile Button, Logout Button
+My_Profile Page - Back to Home Page
+Logout Button - Logout to the home pafe
+
+
+
+future updates
+Update Details
