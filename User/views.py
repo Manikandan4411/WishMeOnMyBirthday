@@ -8,10 +8,18 @@ from django.template.loader import render_to_string
 from User.tokenGenerator import createToken
 from User.tokenGenerator import checkToken
 from datetime import datetime
+from datetime import date
 
 def Welcome(request, user):
   if request.session.has_key('username'):
     user = Users.objects.get(username=user)
+    birthday_date = user.birth_date
+    today = date.today()
+    if((today.day == birthday_date.day) and (today.month == birthday_date.month)):
+      if(user.age!=(today.year-birthday_date.year)):
+        user.age= today.year-birthday_date.year
+        user.save()
+      return render(request, 'birthday.html', {'user': user})
     return render(request, 'welcome.html', {'user': user})
   return redirect(Login)
 

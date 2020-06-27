@@ -30,5 +30,4 @@ urlpatterns = [
     path('recoverpassword/', views.forgotPassword),
     path('changepassword/<user>', views.newPassword),
     path('myprofile/<user>', views.myProfile),
-    #path('updateprofile/<user>', views.updateProfile),
 ]

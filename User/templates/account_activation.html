@@ -1,5 +1,5 @@
 {% autoescape off %}
-Hi {{ user.username }},
+Hi {{ user.firstname }},
 Please click on the below link to confirm your registration,
 
 http://{{ domain }}{% url 'activate' user=user.username token=token %}

@@ -9,3 +9,10 @@ Logout Button - Logout to the home pafe
 
 future updates
 Update Details
+
+
+https://www.w3schools.com/css/css_rwd_images.asp
+https://www.w3schools.com/bootstrap/bootstrap_ref_js_carousel.asp
+https://www.w3schools.com/js/js_timing.asp
+https://www.w3schools.com/js/js_ajax_http_response.asp
+https://www.freecodecamp.org/news/scheduling-jobs-in-a-django-application-using-heroku-scheduler-13c971a22979/
